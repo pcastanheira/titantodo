@@ -17,13 +17,17 @@ function ApplicationWindow(title) {
 	self.add(newTaskText);
 	
 	var taskRow = require('ui/common/TaskRow');
-
-	var tableData = [];
-	tableData.push(new taskRow('Titulo de la tarea'));
 	
 	var table = Ti.UI.createTableView({
-		data : tableData,
+		data : [],
 		top : 80
+	});
+	
+	table.addEventListener('click', function(e) {
+		if (e.source.id == 'removeButton') {
+			table.deleteRow(e.index);
+		}
+		
 	});
 
 	self.add(table);

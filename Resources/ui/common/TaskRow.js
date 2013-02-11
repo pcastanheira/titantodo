@@ -26,6 +26,7 @@ function TaskRow(title) {
 		image: '/images/remove.jpg',
 		right:1,
 		width: 27,
+		id:'removeButton',
 		height: 44
 	});
 	
