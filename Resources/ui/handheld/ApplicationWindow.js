@@ -1,7 +1,8 @@
 function ApplicationWindow(title) {
 	var self = Ti.UI.createWindow({
 		title : 'TitanTodo',
-		backgroundColor : 'white'
+		backgroundColor : 'white',
+		tabBarHidden: true
 	});
 
 	var newTaskText = Ti.UI.createTextField({

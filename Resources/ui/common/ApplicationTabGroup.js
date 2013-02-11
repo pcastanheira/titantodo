@@ -3,35 +3,15 @@ function ApplicationTabGroup(Window) {
 	var self = Ti.UI.createTabGroup();
 	
 	//create app tabs
-	var allWin = new Window('All'),
-		activeWin = new Window('Active'),
-		doneWin = new Window('Done');
-	
-	var allTab = Ti.UI.createTab({
+	var mainWin = new Window('All');
+	var mainTab = Ti.UI.createTab({
 		title: 'All',
 		icon: '/images/KS_nav_ui.png',
-		window: allWin
+		window: mainWin
 	});
-	allWin.containingTab = allTab;
+	mainWin.containingTab = mainTab;	
 	
-	var activeTab = Ti.UI.createTab({
-		title: 'Active',
-		icon: '/images/KS_nav_views.png',
-		window: activeWin
-	});
-	activeWin.containingTab = activeTab;
-	
-	var doneTab = Ti.UI.createTab({
-		title: 'Done',
-		icon: '/images/KS_nav_views.png',
-		window: doneWin
-	});
-	doneWin.containingTab = doneTab;
-		
-	
-	self.addTab(allTab);
-	self.addTab(activeTab);
-	self.addTab(doneTab);
+	self.addTab(mainTab);
 	
 	return self;
 };
