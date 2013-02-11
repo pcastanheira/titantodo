@@ -4,7 +4,7 @@ function TaskRow(title) {
 	
 	var taskView = Titanium.UI.createView({
 		backgroundColor : '#fefefe',
-		width : '90%',
+		width : '100%',
 		height : 44
 	});
 	
@@ -38,9 +38,9 @@ function TaskRow(title) {
 	});
 	taskView.add(taskTitle);
 	
+	taskView.add(removeImg);
+	taskView.add(stateImg);
 	self.add(taskView);
-	self.add(removeImg)
-	self.add(stateImg);
 	
 	self.height = 'auto';
 	
