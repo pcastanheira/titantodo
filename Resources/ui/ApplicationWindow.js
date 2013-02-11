@@ -17,7 +17,7 @@ function ApplicationWindow(title) {
 
 	self.add(newTaskText);
 	
-	var taskRow = require('ui/common/TaskRow');
+	var taskRow = require('ui/TaskRow');
 	
 	var table = Ti.UI.createTableView({
 		data : [],

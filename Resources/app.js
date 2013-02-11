@@ -6,7 +6,7 @@
 		height = Ti.Platform.displayCaps.platformHeight,
 		width = Ti.Platform.displayCaps.platformWidth;
 	
-	var Window = require('ui/handheld/ApplicationWindow');
-	var ApplicationTabGroup = require('ui/common/ApplicationTabGroup');
+	var Window = require('ui/ApplicationWindow');
+	var ApplicationTabGroup = require('ui/ApplicationTabGroup');
 	new ApplicationTabGroup(Window).open();
 })();
